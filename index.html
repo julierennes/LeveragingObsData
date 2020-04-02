@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage for the Copenhagen meeting on generative models and uncertainty quantification">
+    <meta name="author" content="Soren Hauberg, Wouter Boomsma, Jes Frellsen, Pierre-Alexandre Mattei, Ole Winther">
+    <title>Generative Models and Uncertainty Quantification 2019</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146937198-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-146937198-1');
+    </script>
+
+    <!-- Function for generating email adress -->
+    <script>
+      function f() {
+         coded = "CpCdp@QddQpBQodf06.PdC "
+         key = "PIgB4GL0WEZoM2a1wAmj7uilxQYH9sJSFTdy35VcKCenfNpz8hrb6XDOqvkUtR"
+         shift=coded.length
+         link=""
+         for (i=0; i<coded.length; i++) {
+            if (key.indexOf(coded.charAt(i))==-1) {
+               ltr = coded.charAt(i)
+               link += (ltr)
+            }
+            else {     
+               ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+               link += (key.charAt(ltr))
+            }
+         }
+         document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+      }
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target="#topnavbar" data-offset="50">
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnavbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html#top">GenU 2019</a>
+        </div>
+        <div class="collapse navbar-collapse" id="topnavbar" >
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <!--
+            <li><a href="#posters">Posters</a></li>
+	        -->
+            <li><a href="#organizers">Organizers</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <section id="top" class="anchor">
+      <div class="jumbotron jumbotron-fluid" id="banner">
+        <div class="container">
+          <h1><span class="bannertxt">Generative Models and Uncertainty Quantification</span></h1>
+          <p style="font-weight: bold;"><span class="bannertxt">Copenhagen, October 9 and 10, 2019</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About the conference -->
+    <section id="about" class="anchor">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-sm-8">
+            <p style="margin-top: 30px;">
+              Generative models and uncertainty quantification lie at the heart of Bayesian modelling and inference. At this small meeting, we discuss recent developments within the field. The meeting is deliberately kept small in order to ensure that discussion remains honest, lively and interesting. Attendance is, thus, mostly by invitation, but one can apply to join (see <a href="#registration">below</a>).
+            </p>
+          </div> <!-- col-md-8 -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section>
+
+    <!-- SPEAKERS -->
+    <section id="speakers" class="anchor">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Confirmed Speakers</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 person">
+            <img src="img/max.png" alt="Max Welling" class="portrait">
+            <p>
+              <a href="https://staff.fnwi.uva.nl/m.welling/" class="person">Max Welling</a><br>
+              Professor in Machine Learning at the University of Amsterdam and a VP Technologies at Qualcomm. 
+            </p> 
+          </div> <!-- col-sm-4 -->
+          
+          <div class="col-sm-4 person">
+            <img src="img/aki.png" alt="Aki Vehtari" class="portrait"> 
+            <p>
+              <a href="https://users.aalto.fi/~ave/" class="person">Aki Vehtari</a><br>
+              Associate professor in computational probabilistic modeling at Aalto University; visiting professor at Technical University of Denmark (DTU).
+            </p> 
+          </div> <!-- col-sm-4 -->
+        </div> <!-- row -->
+        
+        <div class="row">
+          <div class="col-sm-4 person">
+            <img src="img/will.png" alt="Will Grathwohl" class="portrait">
+            <p>
+              <a href="http://www.cs.toronto.edu/~wgrathwohl/" class="person">Will Grathwohl</a><br>
+	          PhD student at the University of Toronto.
+            </p> 
+          </div> <!-- col-sm-4 -->
+          
+          <div class="col-sm-4 person">
+            <img src="img/mark.png" alt="Mark van der Wilk" class="portrait">
+            <p>
+              <a href="https://markvdw.github.io/" class="person">Mark van der Wilk</a><br>
+	          Machine Learning Researcher PROWLER.io.
+            </p> 
+          </div> <!-- col-sm-4 -->
+        </div> <!-- row -->
+
+        <div class="row">
+          <div class="col-sm-4 person">
+            <img src="img/miguel.png" alt="José Miguel Hernández Lobato" class="portrait"> 
+            <p>
+              <a href="https://jmhl.org/" class="person">José Miguel Hernández Lobato</a><br>
+	          University Lecturer in Machine Learning, University of Cambridge.
+            </p> 
+          </div> <!-- col-sm-4 -->
+          
+          <div class="col-sm-4 person">
+            <img src="img/rianne.png" alt="Rianne van den Berg" class="portrait"> 
+            <p>
+              <a href="https://riannevdberg.github.io" class="person">Rianne van den Berg</a><br>
+	          Research Scientist at Google AI, Amsterdam.
+            </p> 
+	      </div> <!-- col-sm-4 -->
+        </div> <!-- row -->
+
+        <div class="row">
+          <div class="col-sm-4 person">
+            <img src="img/sebastian.png" alt="Sebastian Nowozin" class="portrait"> 
+            <p>
+              <a href="http://www.nowozin.net/sebastian/" class="person">Sebastian Nowozin</a><br>
+	          Machine learning researcher in the Brain team at Google AI, Berlin.
+            </p> 
+          </div> <!-- col-sm-4 -->
+          
+          <div class="col-sm-4 person">
+            <img src="img/daniel.png" alt="Daniel Hernández-Lobato" class="portrait"> 
+            <p>
+              <a href="https://dhnzl.org" class="person">Daniel Hernández-Lobato</a><br>
+              Lecturer of Computer Science at Universidad Autónoma de Madrid.
+            </p> 
+	      </div> <!-- col-sm-4 -->
+        </div> <!-- row -->
+        
+        <div class="row">
+          <div class="col-sm-4 person">
+            <img src="img/andriy.png" alt="Andriy Mnih" class="portrait"> 
+            <p>
+              <a href="http://www.cs.toronto.edu/~amnih/" class="person">Andriy Mnih</a><br>
+              Research scientist at DeepMind.
+            </p> 
+          </div> <!-- col-sm-4 -->
+          
+          <div class="col-sm-4 person">
+            <img src="img/tom.png" alt="Tom Rainforth" class="portrait"> 
+            <p>
+              <a href="http://www.robots.ox.ac.uk/~twgr/" class="person">Tom Rainforth</a><br>
+	          Researcher in statistical machine learning at the University of Oxford.
+            </p> 
+	      </div> <!-- col-sm-4 -->
+        </div> <!-- row -->
+
+        <div class="row">
+          <div class="col-sm-4 person">
+            <img src="img/casper.png" alt="Casper Kaae Sønderby" class="portrait">
+            <p>
+              <a href="https://casperkaae.github.io" class="person">Casper Kaae Sønderby</a><br>
+               Research Scientist in Google Brains Amsterdam Lab.
+            </p>
+          </div> <!-- col-sm-4 -->
+
+          <div class="col-sm-4 person">
+            <img src="img/julie.png" alt="Julie Josse" class="portrait">
+            <p>
+              <a href="http://juliejosse.com" class="person">Julie Josse</a><br>
+	          Professor of Statistics at Ecole Polytechnique (CMAP) and XPOP INRIA team.
+            </p>
+	      </div> <!-- col-sm-4 -->
+        </div> <!-- row -->
+
+        <div class="row">
+          <div class="col-sm-4 person">
+            <img src="img/silvia.png" alt="Silvia Chiappa" class="portrait">
+            <p>
+              <a href="https://csilviavr.github.io" class="person">Silvia Chiappa</a><br>
+              Staff Research Scientist in Machine Learning at DeepMind.
+            </p>
+          </div> <!-- col-sm-4 -->
+        </div> <!-- row -->
+
+      </div> <!-- container -->
+    </section>
+
+
+    <!-- PROGRAM -->
+    <section id="program" class="anchor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Program</h2>
+            <table class="table table-borderless" style="margin-top: 2em;">
+              <thead>
+                <tr style="font-weight: bold;">
+                  <td colspan="2" rowspan="1" style="width: 50%">Wednesday (Oct 9)</td>
+                  <td colspan="2" rowspan="1">Thursday (Oct 10)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hl">
+                  <td colspan="2" rowspan="1">Session 1 <br /><span class="ps">Advances in deep generative models </span><br /><span class="pc">Chair: Søren Hauberg</span></td>
+                  <td colspan="2" rowspan="1">Session 3 <br /><span class="ps">Bayesian neural networks</span><br /><span class="pc">Chair: Wouter Boomsma</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary pbs">8:55-9:00</td>
+                  <td colspan="1" rowspan="1" class="pb">Opening remarks</td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">9:00-10:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Max Welling</span><br /><span class="pt">The Functional Process VAE</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">09:00-09:40</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Sebastian Nowozin</span><br /><span class="pt">Practical Bayesian Neural Networks: Three Obstacles</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">10:00-10:40</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Andriy Mnih</span><br /><span class="pt">Resampled Priors for Variational Autoencoders</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">09:40-10:40</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Casper Kaae Sønderby</span><br /><span class="pt">Bayesian Inference for Large Scale Image Classification</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary pbs">10:40-11:00</td>
+                  <td colspan="1" rowspan="1" class="pb">Coffee</td>
+                  <td colspan="1" rowspan="1" class="secondary pbs">10:40-11:00</td>
+                  <td colspan="1" rowspan="1" class="pb">Coffee</td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">11:00-11:40</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Rianne van den Berg</span><br /><span class="pt">Normalizing flows for discrete data</span></td>
+                  <td colspan="2" rowspan="1" class="hl">Session 4 <br /><span class="ps">Generative models for downstream tasks</span><br /><span class="pc">Chair: Ole Winther</span></td>                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">11:40-12:40</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Tom Rainforth</span><br /><span class="pt">Disentangling Disentanglement in Variational Autoencoders</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">11:00-12:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">José Miguel Hernández-Lobato</span><br /><span class="pt">Advances in Compression via Probabilistic Machine Learning</span></td>
+                </tr>
+                <tr class="hl">
+                  <td colspan="2" rowspan="1" class="hl">Session 2 <br /><span class="ps">Bayesian and causal inference</span><br /><span class="pc">Chair: Pierre-Alexandre Mattei</span></td>
+                  <td colspan="1" rowspan="1" class="secondary pbs">12:00-13:00</td>
+                  <td colspan="1" rowspan="1" class="pb">Lunch</td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary pbs">12:40-13:40</td>
+                  <td colspan="1" rowspan="1" class="pb">Lunch</td>
+                  <td colspan="1" rowspan="1" class="secondary">13:00-14:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Mark van der Wilk</span><br /><span class="pt">Sampling for data augmentation: generative models vs invariances</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">13:40-14:40</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Aki Vehtari</span><br /><span class="pt">Bayesian workflow</span></td>
+                  <td colspan="1" rowspan="1" class="secondary">14:00-15:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Will Grathwohl</span><br /><span class="pt">The many virtues of Incorporating energy-based generative models into discriminative learning</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary pbs">14:40-15:00</td>
+                  <td colspan="1" rowspan="1" class="pb">Coffee</td>
+                  <td colspan="1" rowspan="1" class="secondary pbs">14:40-15:00</td>
+                  <td colspan="1" rowspan="1" class="pb">Coffee</td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">15:00-15:40</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Daniel Hernández-Lobato</span><br /><span class="pt">Adversarial Alpha Divergence Minimization for Bayesian Approximate Inference</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">15:40-16:20</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Silvia Chiappa</span><br /><span class="pt">Causal inference and fairness</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" class="secondary">16:20-18:00</td>
+                  <td colspan="1" rowspan="1"><span class="pp">Poster Session</span></td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="2" class="secondary pbs" style="vertical-align:middle;">18:30-22:00</td>
+                  <td colspan="1" rowspan="2" class="pbs" style="vertical-align:middle;"><span class="ps">Conference Dinner</span><br /> at <a href="https://toldboden.com/en/">Toldboden</a> (<a href="https://g.page/Toldboden?share">directions</a>)</td>
+              </tbody>
+            </table>
+          </div> <!-- col-md-8 -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section>
+    
+    <!-- REGISTRATION -->
+    <section id="registration" class="anchor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Registration</h2>
+            <p>
+              If you would like to attend this meeting, but have yet to recieve an invitation, then fill out the following <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwW43R-XRm95f2wNwUBmTkiosTQcYh589YLMuhKf6_3UNTSw/viewform?usp=sf_link">Google form</a>. Note that seating is limited, so we cannot guarantee a ticket.
+            </p>
+
+    	    <!--
+            <h3>Accommodation</h3>
+            <p>
+              If you are visiting from abroad we recommend the following hotels:
+            </p>
+            <ul>
+              <li><a href="http://www.arthurhotels.dk/hotel-kong-arthur/">Hotel Kong Arthur ****</a></li>
+              <li><a href="https://www.cabinn.com/hotel/sca-hotel-koebenhavn-copenhagen">CABINN Scandinavia Hotel **</a></li>
+            </ul>
+            -->
+	      </div> <!-- col-md-8 -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section>
+
+    <!-- VENUE -->
+    <section id="venue" class="anchor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Venue</h2>
+            <p>
+              The workshop takes place at:
+            </p>
+            <div class="person" style="padding:10px; margin: 10px 0px; width: 100%;">
+              <strong>Pier47</strong><br>
+              Langelinie Allé 47<br />
+              2100 Copenhagen Ø, Denmark<br><br>
+              <img class="img-responsive" alt="Pier47" src="img/night_Pier47_crop.png">
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40881.32073933661!2d12.555185141414546!3d55.71372863137911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465252c2b45067cf%3A0xeb47ba2dfc7c7964!2sPier47!5e0!3m2!1sen!2sdk!4v1567669968223!5m2!1sen!2sdk" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div> <!-- col-md-8 -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section>
+
+
+    <!-- ORGANIZERS -->
+    <section id="organizers" class="anchor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Organizers</h2>
+            <p>
+              The conference is jointly organized by:
+            </p>
+            <ul>
+              <li><a href="http://cogsys.imm.dtu.dk/staff/winther/">Ole Winther, Technical University of Denmark and University of Copenhagen</a></li>
+              <li><a href="http://www2.compute.dtu.dk/~sohau/">S&oslash;ren Hauberg, Technical University of Denmark</a></li>
+              <li><a href="http://www.diku.dk/Ansatte/?pure=da/persons/275482">Wouter Boomsma, University of Copenhagen</a></li>
+              <li><a href="https://pamattei.github.io/">Pierre-Alexandre Mattei, INRIA Sophia-Antipolis</a></li>
+              <li><a href="https://frellsen.org/">Jes Frellsen, Technical University of Denmark</a></li>
+            </ul>
+	        <!--
+            <p>
+              For matters regarding the conference, you can contact <script>f()</script><noscript>[Javascript required]</noscript>.
+            </p>
+	        -->
+            <p>
+	          We are grateful for funding from the Villum Foundation (grant 15334) and the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement number 757360).
+            </p>       
+          </div> <!-- col-md-8 -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section>
+
+    <hr>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p>Title foto shows Kr&oslash;yers Plads (&copy; Martin Heiberg, used with permision from Copenhagen Media Center).</p>
+            <p>&copy; Ole Winther, Pierre-Alexandre Mattei, Wouter Boomsma, Jes Frellsen, S&oslash;ren Hauberg 2019.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

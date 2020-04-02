@@ -1,0 +1,261 @@
+body {
+    font-family: 'Assistant', sans-serif;
+    overflow-x: hidden;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #212121;
+}
+
+.secondary {
+    color: #757575;
+}
+
+a.secondary,
+a.secondary:focus,
+a.secondary:active,
+a.secondary.active {
+    color: #757575;
+    text-decoration: underline;
+}
+
+a.secondary:hover {
+    color: #A30015;
+    text-decoration: underline;
+}
+
+.anchor {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+h1, .h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+h2,.h2 {
+    color: #335C67;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: .5em;
+}
+h3,.h3 {
+    color: #335C67;
+    font-size: 18px;
+    padding-top: .5em;
+}
+
+b, bold {
+    color: #1B4079;
+    font-weight: bold;
+}
+
+strong {
+    color: #E3170A;
+    font-weight: bold;
+}
+
+a,
+a:focus,
+a:active,
+a.active {
+    color: #E3170A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A30015;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgba(27, 65, 78, 0.975); /* #1B414E */
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #87ACB9;
+}
+
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #87ACB9;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    color: #FFFFFF;
+    background-color: #A30015;
+}
+
+
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus  {
+    color: #87ACB9;
+    background-color: #A30015;
+}
+
+/* The burger menu */
+.navbar-default .navbar-toggle {
+    border-color: #1B414E;
+    background-color: #335C67;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:active{
+    background-color: #A30015;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+
+/* Buttons */
+
+.btn-accent,
+.btn-accent:active,
+.btn-accent:visited,
+.btn-accent:focus {
+    background-color: #E3170A;
+    border: none;
+    color: #FFFFFF;
+}
+
+.btn-accent:hover {
+    background-color: #A30015;
+}
+
+/* Borderless table */
+
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    color: #FFFFFF;
+    background-color: #E3170A;
+    border: none;
+}
+
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th {
+    border: none;
+}
+
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th {
+    border: none;
+}
+
+/* Other styles */
+
+.obfuscate span {
+    display: none;
+}
+
+.social {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Boxes */
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-position: 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+
+div.person {
+    background-color: rgba(135, 172, 185,0.25); /* #87ACB9 */
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin:  5px;
+    min-height: 120px;
+}
+
+.portrait {
+    float:left;
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+a.person {
+    color: #E3170A;
+    font-weight: bold;
+}
+
+a.person:hover {
+    color: #A30015;
+    font-weight: bold;
+}
+
+
+div#banner {
+    background-image: url(../img/Kroyersplads_MartinHeiberg-1600px.jpg);
+    background-position: center;
+}
+
+.bannertxt {
+    color: #FFFFFF;
+    background-color: rgba(27, 65, 78,0.70); /* 1B414E */
+    line-height: 1.8em;
+    padding: 0.1em;
+}
+
+/* Styling for program */
+
+.pp { /* Program person */
+    color: #E3170A;
+    font-weight: bold;
+}
+
+.ps { /* Program session title */
+    color: #335C67;
+    font-weight: bold;
+}
+
+.pt { /* Program talk title */
+    font-style: italic;
+}
+
+.pc { /* Program chair */
+    font-style: italic;
+}
+
+.pbs { /* Program break secondary (for time) (coffee, lunch, dinner) */
+    background-color: rgba(135, 172, 185, 0.10); /* #87ACB9 */
+}
+
+.pb { /* Program break text (coffee, lunch, dinner) */
+    color: #335C67;
+    font-weight: bold;
+    background-color: rgba(135, 172, 185, 0.10); /* #87ACB9 */
+}
+
+.hl {
+    background-color: rgba(135, 172, 185, 0.25); /* #87ACB9 */
+}
+
+.pauthor { /* Poster author */
+    color: #335C67;
+}
+
+.ptitle { /* Poster title */
+    font-style: italic;
+}
