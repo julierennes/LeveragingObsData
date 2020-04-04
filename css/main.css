@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
     padding-top: 50px;
     padding-bottom: 20px;
-    color: #212121;
+    color: #050F1E;
 }
 
 .secondary {
@@ -29,28 +29,29 @@ a.secondary:hover {
 }
 
 h1, .h1 {
+    color: #27425D;
     font-size: 28px;
     font-weight: bold;
 }
 h2,.h2 {
-    color: #335C67;
+    color: #27425D;
     font-size: 26px;
     font-weight: bold;
     padding-top: .5em;
 }
 h3,.h3 {
-    color: #335C67;
+    color: #27425D;
     font-size: 18px;
     padding-top: .5em;
 }
 
 b, bold {
-    color: #1B4079;
+    color: #815B36;
     font-weight: bold;
 }
 
 strong {
-    color: #E3170A;
+    color: #815B36;
     font-weight: bold;
 }
 
@@ -58,17 +59,17 @@ a,
 a:focus,
 a:active,
 a.active {
-    color: #E3170A;
+    color: #C06024;
     text-decoration: none;
 }
 
 a:hover {
-    color: #A30015;
-    text-decoration: none;
+    color: #C06024;
+    text-decoration: underline;
 }
 
 .navbar {
-    background-color: rgba(27, 65, 78, 0.975); /* #1B414E */
+    background-color: #27425DF7; /*rgba(27, 65, 78, 0.975);*/ /* #1B414E */
     border-color: transparent;
 }
 
@@ -78,7 +79,7 @@ a:hover {
 }
 
 .navbar-default .navbar-brand:hover {
-    color: #87ACB9;
+    color: #E7D3B6;
 }
 
 
@@ -89,31 +90,31 @@ a:hover {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #87ACB9;
+    color: #E7D3B6;
 }
 
 .navbar-default .navbar-nav > .active > a {
     color: #FFFFFF;
-    background-color: #A30015;
+    background-color: #C06024;
 }
 
 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus  {
-    color: #87ACB9;
-    background-color: #A30015;
+    color: #E7D3B6;
+    background-color: #C06024;
 }
 
 /* The burger menu */
 .navbar-default .navbar-toggle {
-    border-color: #1B414E;
-    background-color: #335C67;
+    border-color: #050F1E;
+    background-color: #27425D;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:active{
-    background-color: #A30015;
+    background-color: #C06024;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -121,7 +122,7 @@ a:hover {
 }
 
 /* Buttons */
-
+/*
 .btn-accent,
 .btn-accent:active,
 .btn-accent:visited,
@@ -134,6 +135,7 @@ a:hover {
 .btn-accent:hover {
     background-color: #A30015;
 }
+*/
 
 /* Borderless table */
 
@@ -177,7 +179,7 @@ a:hover {
 
 
 div.person {
-    background-color: rgba(135, 172, 185,0.25); /* #87ACB9 */
+    background-color: #E7D3B640;/* rgba(135, 172, 185,0.25);  #87ACB9 */
     border: none;
     border-radius: 5px;
     padding: 5px;
@@ -196,24 +198,24 @@ div.person {
 }
 
 a.person {
-    color: #E3170A;
+    color: #C06024;
     font-weight: bold;
 }
 
 a.person:hover {
-    color: #A30015;
+    color: #C06024;
     font-weight: bold;
 }
 
 
 div#banner {
-    background-image: url(../img/Kroyersplads_MartinHeiberg-1600px.jpg);
+    background-image: url(../img/jacek-dylag-IiQXLbTTQCw-unsplash.jpg);
     background-position: center;
 }
 
 .bannertxt {
     color: #FFFFFF;
-    background-color: rgba(27, 65, 78,0.70); /* 1B414E */
+    background-color:  #27425D99;  /* rgba(27, 65, 78,0.70); 1B414E */
     line-height: 1.8em;
     padding: 0.1em;
 }
