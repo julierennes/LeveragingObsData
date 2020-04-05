@@ -46,12 +46,11 @@ h3,.h3 {
 }
 
 b, bold {
-    color: #050F1E;
     font-weight: bold;
 }
 
 strong {
-    color: #587876;
+    color: #050F1E;
     font-weight: bold;
 }
 
