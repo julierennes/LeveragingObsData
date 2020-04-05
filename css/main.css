@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
     padding-top: 50px;
     padding-bottom: 20px;
-    color: #050F1E;
+    color: #27425D;
 }
 
 .secondary {
@@ -46,12 +46,12 @@ h3,.h3 {
 }
 
 b, bold {
-    color: #815B36;
+    color: #050F1E;
     font-weight: bold;
 }
 
 strong {
-    color: #815B36;
+    color: #587876;
     font-weight: bold;
 }
 
