@@ -261,3 +261,7 @@ div#banner {
 .ptitle { /* Poster title */
     font-style: italic;
 }
+
+p.paper {
+    margin-left: 1em;
+}
