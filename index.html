@@ -88,7 +88,7 @@
       <div class="jumbotron jumbotron-fluid" id="banner">
         <div class="container">
           <h1><span class="bannertxt">Leveraging Observational Data With Machine Learning</span></h1>
-          <p style="font-weight: bold; font-size: 26px;"><span class="bannertxt">First ICML workshop, July 17th, 2020</span></p>
+          <p style="font-weight: bold; font-size: 26px;"><span class="bannertxt">June 22-2th3, 2021</span></p>
         </div>
       </div>
     </section>
@@ -99,15 +99,35 @@
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-sm-8">
+		  
             <p style="margin-top: 30px;">
-              Analysis of large amounts of data offers new opportunities to understand many processes better. Yet, data accumulation often implies relaxing acquisition procedures or compounding diverse sources, leading to many observations with missing features. <b>From questionnaires to collaborative filtering, from electronic health records to single-cell analysis, missingness is everywhere at play and is rather the norm than the exception.</b> Even "clean" data sets are often barely "cleaned" versions of incomplete data sets—with all the unfortunate biases this cleaning process may have created.
-            </p>
-            <p>
-              <b>Despite this ubiquity, tackling missing values is often overlooked</b>.  Handling missing values poses many challenges, and there is a vast literature in the statistical community, with many implementations available. Yet, there are still many open issues and the need to design new methods or to introduce new point of views: for missing values in a supervised-learning setting, in deep learning architectures, to adapt available methods for high dimensional observed data with different type of missing values, deal with feature mismatch and distribution mismatch. Missing data is one of the eight pillars of causal wisdom for Judea Pearl who brought graphical model reasoning to tackle some missing not at random values.
-            </p>
-            <p>
-              The goal of the <b>Leveraging Observational Data (ARTEMISS)</b> workshop is to <b>give more momentum and exposition to research on missing values, both theoretical, methodological, and applied, and emphasize the connections with other areas of machine learning</b> (e.g. causal inference, semi-supervised learning, generative modelling, uncertainty quantification, transfer learning, distributional shift, etc.). We will also attach importance to discussing the reproducibility problems that can be caused by missing data, the danger of forgetting the missing values issues and the importance of providing sound implementations.
-            </p>
+                Randomized controlled trials (RCTs) are considered the gold standard approach for assessing the causal effect of an intervention or a treatment on an outcome of interest. However, RCTs can come with drawbacks. They can be expensive, take a long time to set up, and be compromised by insufficient sample size due to either recruitment difficulties or restrictive inclusion/exclusion criteria. These criteria for participant eligibility can lead to a narrowly-defined trial sample that differs markedly from the population potentially eligible for the treatment.  Therefore, the findings from RCTs can lack generalizability (external validity) to a target population of interest. 
+</p>
+		    <p>
+		    In contrast, there is an abundance of observational data, collected without systematically- designed interventions.  Such data can come from different sources:  they can be collected from research sources such as disease registries, cohorts, biobanks, epidemiological studies, or they can be routinely collected through electronic health records, insurance claims, administrative databases, etc. In that sense, observational data can be readily available, include large samples that are representative of the target populations, and be less costly than RCTs.
+</p>
+		  <p>
+			    In order to leverage observational data for causal effect analysis in health domains, several laws built on FDA work encourage the use of “real world data” (RWD), defined as data “derived from sources other than randomized clinical trials,” for regulatory decision making. Clinical evidence regarding the usage and potential benefits or risks of a medical product derived from the analysis of RWD is named Real World Evidence (RWE). EMA regulatory authority is also very active in working with RWD to facilitate development and access to medicines. However, there are often concerns about the quality of these “big data” given that the lack of a controlled experimental intervention opens the door to confounding bias.
+<p>
+	To evaluate the causal effect of an intervention, considerable progress arose recently in machine learning. Well anchored biostatistical methodologies, which often rely on linear models, have been challenged by flexible machine learning approaches that can handle large dimensional variables and complex relationships between variables and health outcomes. The extent to which more flexible approaches provide better evaluation of causal effects is a matter of discussion, which will be addressed during the workshop. 
+</p>
+		  <p>
+	Observational data and clinical trial data can provide different perspectives when evaluating an intervention or a medical treatment.  Combining the information gathered from experimental and observational data is a promising avenue for medical research, because the knowledge that can be acquired from integrative analyses would not be possible from any single-source analysis alone. 
+</p>
+  <p>
+The objective of this workshop is to:
+bring together  main actors working with observational or real-world data, and developing machine learning models for causal inference
+Present the state of the art in DRT
+present the possibilities offered by real word data and by the integration of real word data and RCTs
+Validate observational studies
+Generalize the treatment effect in a target patient population
+Better estimate the (heterogeneous) effects
+Handle unobserved confounders
+Help better designing RCT with better external validity
+discuss about which real word data should be collected
+promote collaboration between the different actors
+</p>
+		   		  
           </div> <!-- col-md-8 -->
         </div> <!-- row -->
       </div> <!-- container -->
@@ -126,9 +146,9 @@
 
         <div class="row">
           <div class="col-sm-4 person">
-            <img src="img/rich.png" alt="Rich Caruana" class="portrait">
+            <img src="img/" alt="Elisabeth. A. Stuart" class="portrait">
             <p>
-              <a href="https://www.microsoft.com/en-us/research/people/rcaruana/" class="person">Rich Caruana</a><br>
+              <a href="http://www.biostat.jhsph.edu/~estuart/" class="person">Rich Caruana</a><br>
               Senior Principal Researcher at Microsoft Research.
             </p> 
           </div> <!-- col-sm-4 -->
