@@ -265,3 +265,9 @@ div#banner {
 p.paper {
     margin-left: 1em;
 }
+
+#responsive-image {  
+    width: 50%;  
+    height: auto;
+    position: center;
+} 
