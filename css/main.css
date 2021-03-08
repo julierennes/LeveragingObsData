@@ -103,7 +103,7 @@ a:hover {
 }
 
 
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus  {
     color: #E7D3B6;
     background-color: #C06024;
@@ -188,13 +188,13 @@ div.person {
     border-radius: 5px;
     padding: 5px;
     margin:  5px;
-    min-height: 120px;
+    min-height: 150px;
 }
 
 
 .portrait {
     float:left;
-    height: 100px;
+    height: 120px;
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -271,9 +271,11 @@ p.paper {
     margin-left: 1em;
 }
 
-#responsive-image {  
-    width: 70%;  
+
+
+#responsive-image {
+    width: 70%;
     display: block;
     height: auto;
     position: center;
-} 
+}
