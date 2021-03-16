@@ -279,3 +279,14 @@ p.paper {
     height: auto;
     position: center;
 }
+
+.row-logos > div{
+  width: 22%;/*example only*/
+  height: 60px;/*example only*/
+  position: center;
+  margin-bottom: 20px;
+}
+.row-logos > div img{
+  max-height: 100%;
+  position: center;
+}
