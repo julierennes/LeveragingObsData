@@ -32,7 +32,7 @@ DTEND;TZID=Europe/Berlin:20210623T190000
 SUMMARY:[Virtual Workshop] Leveraging Observational Data
 URL:https://files.inria.fr/leveraging2021/
 DESCRIPTION:This 2-day long virtual workshop is dedicated to researchers in ML\, in health\, clinicians\, companies interested in these topics. \nThe objective of this workshop is to ...\n - bring together main actors working with observational or real-world data\, and developing biostatistics and machine learning models for causal inference\n - present the state of the art in dynamic treatment regime (DRT)\n - highlight the complementarity of using both Structural Causal Model and Potential Outcome point of views\n - present the possibilities offered by real word data and by the integration of real word data and RCTs\n - discuss about which real word data should be collected\n - promote collaboration between the different actors.
-LOCATION:Virtual - Connection links will be provided by email
+LOCATION: Virtual - Connection links will be sent automatically after registration
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[Virtual Workshop] Leveraging Observational Data
