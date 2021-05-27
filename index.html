@@ -315,16 +315,16 @@
           <table class="table table-borderless" style="margin-top: 2em;">
             <thead>
               <tr style="font-weight: bold;">
-                <td colspan="2" rowspan="1" style="width: 50%">Tuesday (Jun 22)</td>
-                <td colspan="2" rowspan="1">Wednesday (Jun 23)</td>
+                <td colspan="2" rowspan="1" width="50%">Tuesday (Jun 22)</td>
+                <td colspan="2" rowspan="1" width="50%">Wednesday (Jun 23)</td>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td colspan="1" rowspan="1" class="secondary pbs">14:00-14:15</td>
                 <td colspan="1" rowspan="1" class="pb">Opening by the workshop organizers</td>
-                <td colspan="1" rowspan="1" </td>
-                <td colspan="1" rowspan="1" </td>
+                <td colspan="1" rowspan="1"> </td>
+                <td colspan="1" rowspan="1"> </td>
               </tr>
               <tr>
                 <td colspan="1" rowspan="1" class="secondary">14:15-15:05</td>
@@ -334,7 +334,7 @@
               </tr>
               <tr>
                 <td colspan="1" rowspan="1" class="secondary">15:05-15:25</td>
-                <td colspan="1" rowspan="1"><span class="pp">Clémence Leyrat</span><br /><span class="pt">
+                <td colspan="1" rowspan="1" width="45%"><span class="pp">Clémence Leyrat</span><br /><span class="pt">
                   <details><summary>Using large observational data to emulate target trials: What can be done to address immortal-time bias?</summary>Abstract: Real world evidence from observational studies is becoming increasingly important to influence health care policies. However, unlike randomised trials, observational studies are prone to bias, such as confounding or immortal-time bias. A general framework to emulate randomised trials from observational data has been proposed to estimate causal effects while addressing these two issues. Briefly, the approach involves cloning, censoring and then re-weighting observations. In this talk, I will present the methodology and its underlying assumptions, and discuss the benefits of this procedure over more standard modelling approaches as well as the role double robust methods and machine learning could play in this context. This will be illustrated with an application to the estimation of the causal effect of early surgery on 1-year survival among older lung cancer patients using data from the England Cancer Registry.
                   </details></span></td>
                 <td colspan="1" rowspan="1" class="secondary">14:50-15:40</td>
@@ -354,7 +354,7 @@
               </tr>
               <tr>
                 <td colspan="1" rowspan="1" class="secondary">16:00-16:20</td>
-                <td colspan="1" rowspan="1"><span class="pp">Yohann Foucher</span><br /><span class="pt">
+                <td colspan="1" rowspan="1" width="45%"><span class="pp">Yohann Foucher</span><br /><span class="pt">
                   <details><summary>Simulation-based studies related to the G-computation for causal inference: an overview of recent results</summary>Abstract: Different methods are available to estimate a marginal effect in presence of confounders. In the literature, the G-computation (GC) is a less applied method than those based on the propensity score. We conduct several simulation-based studies to explore its performances in distinct circumstances. We focus on a binary treatment, a binary outcome and baseline confounders.</br>Firstly, we investigate the impact on the performances of covariates' selection. We use different sets of covariates in the GC as well as in three other methods: inverse probability of treatment weighting (IPW), full matching and targeted maximum likelihood estimator (TMLE). The results suggest that considering all the covariates causing the outcome leads to the lowest variance without increasing the bias, particularly for the GC. (Chatton et al., Sci Rep 2020) </br>Secondly, we combine machine learning and G-computation. We evaluate the performances of several methods, including penalized logistic regressions, neural network, support vector machine, boosted classification and regression trees, and super learner. We report that the super learner leads to a bias close to zero without variance or convergence issue, even in small sample sizes. The support vector machine also performs well, but the mean bias is slightly higher than the super learner one. (Le Borgne et al., Sci Rep 2021) </br>Thirdly, we study the robustness of GC to a near-violation of the positivity assumption associated with different level of extrapolation issue. We compare the performances between GC, IPW, truncated-IPW, TMLE, and truncated-TMLE. The GC seems less prone to bias than IPW and truncated-IPW, except in the presence of an improbably high extrapolation issue. The TMLE have similar properties but at the cost of a severe under-coverage in all studied scenarios. (Léger et al., In revision) </br>Lastly, we define the theoretical background of the GC implementation for time-to-event analyses, and we compare the performances of GC and IPW in such a context. We report higher efficiency for GC when the causes of the outcomes are considered, even in the presence of a high censoring rate. (Chatton et al, In revision) </br>In light of these results, we propose novel functions in the R package “RISCA” to encourage the use of the GC. We are working to further propose a super learner for causal inference in the context of time-to-event outcomes.
                   </details></span></td>
                 <td colspan="1" rowspan="1" class="secondary">16:00-16:20</td>
@@ -364,7 +364,7 @@
                 <td colspan="1" rowspan="1" class="secondary">16:20-17:10</td>
                 <td colspan="1" rowspan="1"><span class="pp">Bill Crown</span><br /><span class="pt">Causal Estimates of Treatment Effects Using Routinely Collected Healthcare Data</span></td>
                 <td colspan="1" rowspan="1" class="secondary">16:20-17:10</td>
-                <td colspan="1" rowspan="1"><span class="pp">Elisabeth A. Stuart</span><br /><span class="pt">
+                <td colspan="1" rowspan="1" width="45%"><span class="pp">Elisabeth A. Stuart</span><br /><span class="pt">
                   <details><summary>Integrating experimental and population data to estimate population average treatment effects</summary>Abstract: With increasing attention being paid to the relevance of studies for real-world practice (such as in education, international development, and comparative effectiveness research), there is also growing interest in external validity and assessing whether the results seen in randomized trials would hold in target populations. While randomized trials yield unbiased estimates of the effects of interventions in the sample of individuals (or physician practices or hospitals) in the trial, they do not necessarily inform about what the effects would be in some other, potentially somewhat different, population.  While there has been increasing discussion of this limitation of traditional trials, until relatively recently there was little statistical work developing methods to assess or enhance the external validity of randomized trial results.  This talk will discuss design and analysis methods for combining experimental and population data to assess and increase external validity, including the potential value of machine learning and other flexible modeling approaches.
                   </details></span></td>
               </tr>
